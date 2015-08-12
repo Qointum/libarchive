@@ -30,6 +30,7 @@
 		31C8E5958008492DB2E2BC44 /* archive_read_set_options.c in Sources */ = {isa = PBXBuildFile; fileRef = F7BD719E020C431780A1E5C6 /* archive_read_set_options.c */; settings = {COMPILER_FLAGS = ""; }; };
 		342B8DDEFB6E424D9739C759 /* archive_write_disk_set_standard_lookup.c in Sources */ = {isa = PBXBuildFile; fileRef = 857DF8F374E245C484E32C18 /* archive_write_disk_set_standard_lookup.c */; settings = {COMPILER_FLAGS = ""; }; };
 		36FA36EF0E4144E8971643A7 /* archive_match.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E97AE781D594553BEEBFCAD /* archive_match.c */; settings = {COMPILER_FLAGS = ""; }; };
+		370233C11B7AE33C00AE4A8A /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 370233C01B7AE33C00AE4A8A /* libz.a */; };
 		3BFE0F48763F4984A720D565 /* archive_read_support_format_warc.c in Sources */ = {isa = PBXBuildFile; fileRef = B604A4BC7E034EC3AD43377A /* archive_read_support_format_warc.c */; settings = {COMPILER_FLAGS = ""; }; };
 		3CDF014B46A047798D6EFC83 /* archive_read_support_format_xar.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DCCB1DD5DA4E3C87180718 /* archive_read_support_format_xar.c */; settings = {COMPILER_FLAGS = ""; }; };
 		3D0DC9C0A9C64149B18ABC24 /* archive_read_open_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E94D27357304CA1B074B3A6 /* archive_read_open_file.c */; settings = {COMPILER_FLAGS = ""; }; };
@@ -162,6 +163,7 @@
 		30F9029F0FF34C919AB5124E /* archive_write_set_format_iso9660.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = archive_write_set_format_iso9660.c; path = ../../libarchive/archive_write_set_format_iso9660.c; sourceTree = SOURCE_ROOT; };
 		35F8BC61C5804821B891C92F /* archive_read_support_format_cpio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = archive_read_support_format_cpio.c; path = ../../libarchive/archive_read_support_format_cpio.c; sourceTree = SOURCE_ROOT; };
 		370233BD1B7AD12500AE4A8A /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		370233C01B7AE33C00AE4A8A /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = ../../../zlib/mac/build/Debug/libz.a; sourceTree = "<group>"; };
 		3B317B3D47DB4A86B36EE1D2 /* archive_read_data_into_fd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = archive_read_data_into_fd.c; path = ../../libarchive/archive_read_data_into_fd.c; sourceTree = SOURCE_ROOT; };
 		3F00ABBD56D24B0AA43F02C0 /* archive_write_disk_acl.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = archive_write_disk_acl.c; path = ../../libarchive/archive_write_disk_acl.c; sourceTree = SOURCE_ROOT; };
 		41E048757F6E40ADB1CE608F /* archive_write_set_format_filter_by_ext.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = archive_write_set_format_filter_by_ext.c; path = ../../libarchive/archive_write_set_format_filter_by_ext.c; sourceTree = SOURCE_ROOT; };
@@ -267,7 +269,26 @@
 		FFBB270D45A9456085F0555A /* archive_read_support_filter_bzip2.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = archive_read_support_filter_bzip2.c; path = ../../libarchive/archive_read_support_filter_bzip2.c; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		370233BF1B7AE33300AE4A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370233C11B7AE33C00AE4A8A /* libz.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		370233C21B7AE34D00AE4A8A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				370233C01B7AE33C00AE4A8A /* libz.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		38D2713E74914E928ECFBE1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +436,7 @@
 		C3537CA47E914DFF95630A70 = {
 			isa = PBXGroup;
 			children = (
+				370233C21B7AE34D00AE4A8A /* Libraries */,
 				9C96D3A0AAED4ED7A780A0EF /* archive_static */,
 				9485D2F0D9D64E118E2E7077 /* Resources */,
 				38D2713E74914E928ECFBE1C /* Products */,
@@ -464,6 +486,7 @@
 			buildConfigurationList = A065E5578AFD4821A28C7815 /* Build configuration list for PBXNativeTarget "archive_static" */;
 			buildPhases = (
 				2A127918E5DA4EB196938B6B /* Sources */,
+				370233BF1B7AE33300AE4A8A /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -667,6 +690,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dan/work/Qointumd/ext/zlib/mac/build/Debug,
+				);
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = (
 					"-Wall",
@@ -722,6 +749,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dan/work/Qointumd/ext/zlib/mac/build/Debug,
+				);
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = (
 					"-Wall",
@@ -772,6 +803,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dan/work/Qointumd/ext/zlib/mac/build/Debug,
+				);
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = (
 					"-Wall",
@@ -808,6 +843,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dan/work/Qointumd/ext/zlib/mac/build/Debug,
+				);
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = (
 					"-Wall",
