@@ -89,6 +89,7 @@ libarchive/libarchive.so
 libarchive/libarchive.so.*
 
 .DS_Store
+xcuserdata
 
 bsdcat_test.log
 bsdcat_test.trs
