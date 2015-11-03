@@ -32,7 +32,7 @@ cat/.dirstamp
 cat/test/.deps/
 cat/test/.dirstamp
 cat/test/list.h
-config.h
+#config.h
 config.h.in
 config.log
 config.status
