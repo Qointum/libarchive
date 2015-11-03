@@ -655,6 +655,7 @@
 					../../libarchive,
 					/usr/include/libxml2,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -669,6 +670,7 @@
 					../../libarchive,
 					/usr/include/libxml2,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -728,6 +730,7 @@
 					../../libarchive,
 					/usr/include/libxml2,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -782,6 +785,7 @@
 					../../libarchive,
 					/usr/include/libxml2,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
